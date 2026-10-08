@@ -975,3 +975,621 @@ body.modal-open { overflow:hidden; }
     margin-top: 6px;
     display: block;
 }
+/* =========================================
+   LOGIN / REGISTER / ADMIN STYLES
+========================================= */
+
+.auth-card {
+    max-width: 620px;
+    width: 100%;
+}
+
+.auth-card form {
+    margin-top: 25px;
+    display: grid;
+    gap: 10px;
+}
+
+.auth-card label {
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.auth-card input::placeholder {
+    color: #9aa39d;
+}
+
+.auth-card input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(47,107,79,.10);
+}
+
+.auth-submit {
+    border: 0;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.auth-message {
+    min-height: 20px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+}
+
+.auth-message.success {
+    color: var(--accent);
+}
+
+.auth-message.error {
+    color: #a33a3a;
+}
+
+.auth-link-box {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.auth-link-box a {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.auth-link-box a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.auth-info-card {
+    min-height: 100%;
+}
+
+.admin-auth-card {
+    background: #ffffff;
+}
+
+.admin-info-card {
+    min-height: 100%;
+}
+
+
+/* =========================================
+   GARDEN TIMING CARD
+========================================= */
+
+#timings .chart-card {
+    min-height: 100%;
+}
+
+#timings .pending-chart div {
+    align-items: center;
+}
+
+#timings .pending-chart div span {
+    font-weight: 800;
+    color: var(--ink);
+}
+
+#timings .pending-chart div b {
+    text-align: right;
+}
+
+
+/* =========================================
+   HERO BUTTON IMPROVEMENTS
+========================================= */
+
+.hero-actions .btn {
+    cursor: pointer;
+}
+
+.hero-actions .btn-ghost {
+    color: var(--ink);
+}
+
+
+/* =========================================
+   NAVIGATION AUTH LINKS
+========================================= */
+
+.nav-links li:last-child a {
+    color: var(--accent);
+}
+
+
+/* =========================================
+   DARK ADMIN SECTION
+========================================= */
+
+.section-dark .auth-card label {
+    color: var(--ink);
+}
+
+.section-dark .section-intro {
+    color: rgba(255,255,255,.62);
+}
+
+.section-dark .audience-card {
+    background: rgba(255,255,255,.97);
+}
+
+
+/* =========================================
+   RESPONSIVE AUTH
+========================================= */
+
+@media (max-width: 900px) {
+
+    .auth-card {
+        max-width: 100%;
+    }
+
+    .nav-links a {
+        padding: 10px 12px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .auth-card {
+        padding: 22px;
+    }
+
+    .auth-link-box {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .auth-submit {
+        width: 100%;
+    }
+
+    #timings .pending-chart div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #timings .pending-chart div b {
+        text-align: left;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =========================================
+   ADMIN FACILITIES MANAGEMENT
+========================================= */
+
+.admin-facilities-card {
+    width: 100%;
+}
+
+.admin-facilities-list {
+    margin-top: 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.admin-facility-item {
+    padding: 17px;
+    background: #fafcf9;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+.admin-facility-item h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.admin-facility-item p {
+    color: var(--muted);
+    font-size: 12px;
+    margin: 0;
+}
+
+.admin-facility-edit {
+    margin-top: 12px;
+    width: 100%;
+    border: 1px solid var(--line);
+    background: white;
+    color: var(--ink);
+    padding: 10px 13px;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.admin-facility-edit:hover {
+    background: var(--ink);
+    color: white;
+}
+
+.admin-facility-form {
+    margin-top: 15px;
+    display: none;
+    gap: 9px;
+}
+
+.admin-facility-form.show {
+    display: grid;
+}
+
+.admin-facility-form label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.admin-facility-form input,
+.admin-facility-form select,
+.admin-facility-form textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: white;
+    color: var(--ink);
+    padding: 11px 12px;
+    font: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+.admin-facility-form textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.admin-facility-form input:focus,
+.admin-facility-form select:focus,
+.admin-facility-form textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(47,107,79,.08);
+}
+
+.admin-form-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.admin-save-facility,
+.admin-cancel-facility {
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.admin-save-facility {
+    background: var(--accent);
+    color: white;
+}
+
+.admin-cancel-facility {
+    background: #eef2ed;
+    color: var(--ink);
+}
+
+.admin-loading {
+    color: var(--muted);
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+
+    .admin-form-buttons {
+        flex-direction: column;
+    }
+
+    .admin-save-facility,
+    .admin-cancel-facility {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   USER AUTHENTICATION GATE
+   ========================================================= */
+
+body.auth-locked {
+    overflow: hidden;
+}
+
+body.auth-locked > *:not(#userAuthGate) {
+    filter: blur(7px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#userAuthGate {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 24, 19, 0.42);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.auth-gate-card {
+    width: min(430px, 100%);
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 24px;
+    box-shadow: 0 30px 90px rgba(0,0,0,.25);
+}
+
+.auth-gate-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 24px;
+}
+
+.auth-gate-brand-mark {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--ink);
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.auth-gate-card h2 {
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+
+.auth-gate-subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.auth-gate-form {
+    display: grid;
+    gap: 14px;
+}
+
+.auth-gate-form label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.auth-gate-form input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    outline: none;
+    font: inherit;
+    background: white;
+}
+
+.auth-gate-form input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(47,107,79,.10);
+}
+
+.auth-gate-button {
+    width: 100%;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.auth-gate-message {
+    min-height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.auth-gate-switch {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.auth-gate-switch button {
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    font-weight: 800;
+    cursor: pointer;
+    font: inherit;
+}
+
+.auth-gate-register {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #userAuthGate {
+        padding: 14px;
+    }
+
+    .auth-gate-card {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    .auth-gate-card h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   ADMIN MODE
+   ========================================================= */
+
+body.admin-mode > header,
+body.admin-mode > footer {
+    display: none !important;
+}
+
+body.admin-mode main > section:not(#admin-login):not(#admin-dashboard) {
+    display: none !important;
+}
+
+body.admin-mode #admin-login {
+    display: none !important;
+}
+
+body.admin-mode #admin-dashboard {
+    display: block !important;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Keep admin dashboard clean and separate */
+#admin-dashboard {
+    min-height: 100vh;
+}
+
+#admin-login.admin-private-login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================================================
+   PRIVATE ADMIN PORTAL
+   ========================================================= */
+
+body.admin-portal-mode {
+    background: var(--soft);
+}
+
+body.admin-portal-mode > header,
+body.admin-portal-mode > footer {
+    display: none !important;
+}
+
+body.admin-portal-mode main {
+    min-height: 100vh;
+}
+
+body.admin-portal-mode main > section:not(#admin-login):not(#admin-dashboard) {
+    display: none !important;
+}
+
+body.admin-portal-mode #admin-login {
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+body.admin-portal-mode #admin-dashboard {
+    min-height: 100vh;
+}
+
+/* FINAL LOGIN GATE FIX */
+
+#finalUserGate {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 20px !important;
+
+    background: rgba(15, 24, 19, 0.42) !important;
+    backdrop-filter: blur(3px) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+
+    overflow-y: auto !important;
+}
+
+body.auth-locked > #finalUserGate {
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+}
+
+#finalUserGate .auth-gate-card {
+    position: relative !important;
+    z-index: 100000 !important;
+}
+
+/* =========================================================
+   ADMIN ENTRY - SHOW ONLY CHOICE FIRST
+   ========================================================= */
+
+body.admin-portal-mode > header,
+body.admin-portal-mode > footer {
+    display: none !important;
+}
+
+body.admin-portal-mode #admin-login,
+body.admin-portal-mode #admin-dashboard {
+    display: none !important;
+}
+
+#adminChoicePage {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 999999 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow-y: auto !important;
+}

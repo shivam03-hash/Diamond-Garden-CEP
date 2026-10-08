@@ -3,331 +3,2185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Public Space Usage and Digital Mapping of Diamond Garden, Chembur.">
+
+    <meta
+        name="description"
+        content="Public Space Usage and Digital Mapping of Diamond Garden, Chembur."
+    >
+
     <title>Diamond Garden | CEP Project</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- =========================
+     HEADER / NAVIGATION
+========================= -->
 <header class="site-header">
     <nav class="navbar container">
+
         <a class="brand" href="#home">
             <span class="brand-mark">DG</span>
             <span>Diamond Garden</span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            type="button"
+        >
+            ☰
+        </button>
 
         <ul class="nav-links" id="navLinks">
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#timings">Timings</a></li>
             <li><a href="#facilities">Facilities</a></li>
             <li><a href="#usage">Usage</a></li>
             <li><a href="#issues">Issues</a></li>
             <li><a href="#gallery">Photos</a></li>
             <li><a href="#map">Map</a></li>
+            <li><a href="#login">User Login</a></li>
         </ul>
+
     </nav>
 </header>
 
+
 <main>
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="eyebrow">COMMUNITY ENGAGEMENT PROJECT • B.Sc. COMPUTER SCIENCE</span>
-            <h1>Public Space Usage<br><span>& Digital Mapping</span></h1>
+
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span class="eyebrow">
+            COMMUNITY ENGAGEMENT PROJECT • B.Sc. COMPUTER SCIENCE
+        </span>
+
+        <h1>
+            Public Space Usage<br>
+            <span>& Digital Mapping</span>
+        </h1>
+
+        <p>
+            A digital study of Diamond Garden, Chembur, focusing on public-space
+            facilities, usage patterns, local issues and improvement requirements.
+        </p>
+
+        <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#facilities">
+                Explore Garden <span>→</span>
+            </a>
+
+            <a class="btn btn-ghost" href="#map">
+                View Map
+            </a>
+
+        </div>
+
+        <div class="hero-note">
+            <span>📍</span>
+            <span>
+                Selected public space:
+                <strong>Diamond Garden, Chembur</strong>
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+<section class="stats-strip">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <strong id="facilityCount">—</strong>
+            <span>Facilities to survey</span>
+        </div>
+
+        <div class="stat">
+            <strong>3</strong>
+            <span>Usage time slots</span>
+        </div>
+
+        <div class="stat">
+            <strong>1</strong>
+            <span>Selected public space</span>
+        </div>
+
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Local survey focus</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+<section class="section" id="about">
+
+    <div class="container two-col">
+
+        <div>
+
+            <span class="section-label">
+                ABOUT THE PROJECT
+            </span>
+
+            <h2>
+                Understanding one public space through real local data.
+            </h2>
+
             <p>
-                A digital study of Diamond Garden, Chembur, focusing on public-space
-                facilities, usage patterns, local issues and improvement requirements.
+                This Community Engagement Project studies how a public space is
+                used by different groups, digitally maps its facilities and
+                documents usage patterns and improvement requirements.
             </p>
-            <div class="hero-actions">
-                <a class="btn btn-primary" href="#facilities">Explore Garden <span>→</span></a>
-                <a class="btn btn-ghost" href="#map">View Map</a>
-            </div>
-            <div class="hero-note">
-                <span>📍</span>
-                <span>Selected public space: <strong>Diamond Garden, Chembur</strong></span>
-            </div>
-        </div>
-    </section>
 
-    <section class="stats-strip">
-        <div class="container stats-grid">
-            <div class="stat">
-                <strong id="facilityCount">—</strong>
-                <span>Facilities to survey</span>
-            </div>
-            <div class="stat">
-                <strong>3</strong>
-                <span>Usage time slots</span>
-            </div>
-            <div class="stat">
-                <strong>1</strong>
-                <span>Selected public space</span>
-            </div>
-            <div class="stat">
-                <strong>100%</strong>
-                <span>Local survey focus</span>
-            </div>
-        </div>
-    </section>
+            <p>
+                The selected site is Diamond Garden (Late Shri N. G. Acharya Udyan)
+                in Chembur. MCGM lists the garden at the junction of MDS Marg and
+                V. N. Purav Marg with an area of 9,798 sq. m.
+            </p>
 
-    <section class="section" id="about">
-        <div class="container two-col">
+            <p class="source-note">
+                Online research is used only for background information. The website
+                now includes photographs from the field visit. Exact visitor counts
+                and survey percentages should be added only after the observation/
+                survey is completed.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">🌳</div>
+
+            <h3>Project Objective</h3>
+
+            <p>
+                Digitally organize information about facilities, usage patterns,
+                problems and improvement suggestions for Diamond Garden.
+            </p>
+
+            <div class="snapshot-grid">
+
+                <div>
+                    <b>9,798 m²</b>
+                    <span>MCGM listed area</span>
+                </div>
+
+                <div>
+                    <b>Chembur</b>
+                    <span>Mumbai location</span>
+                </div>
+
+                <div>
+                    <b>Public park</b>
+                    <span>Selected study space</span>
+                </div>
+
+                <div>
+                    <b>Field survey</b>
+                    <span>Current status to verify</span>
+                </div>
+
+            </div>
+
+            <div class="mini-list">
+
+                <div>
+                    <span>01</span>
+                    Field observation
+                </div>
+
+                <div>
+                    <span>02</span>
+                    Data collection
+                </div>
+
+                <div>
+                    <span>03</span>
+                    Digital presentation
+                </div>
+
+                <div>
+                    <span>04</span>
+                    Analysis & recommendations
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GARDEN TIMINGS
+========================= -->
+<section class="section section-soft" id="timings">
+
+    <div class="container">
+
+        <div class="section-heading">
+
             <div>
-                <span class="section-label">ABOUT THE PROJECT</span>
-                <h2>Understanding one public space through real local data.</h2>
-                <p>
-                    This Community Engagement Project studies how a public space is
-                    used by different groups, digitally maps its facilities and
-                    documents usage patterns and improvement requirements.
-                </p>
-                <p>
-                    The selected site is Diamond Garden (Late Shri N. G. Acharya Udyan)
-                    in Chembur. MCGM lists the garden at the junction of MDS Marg and
-                    V. N. Purav Marg with an area of 9,798 sq. m.
-                </p>
-                <p class="source-note">Online research is used only for background information. The website now includes
-                    photographs from the field visit. Exact visitor counts and survey percentages should be added only
-                    after the observation/survey is completed.</p>
+
+                <span class="section-label">
+                    GARDEN TIMINGS
+                </span>
+
+                <h2>
+                    When is Diamond Garden open?
+                </h2>
+
             </div>
 
-            <div class="info-card">
-                <div class="info-icon">🌳</div>
-                <h3>Project Objective</h3>
-                <p>
-                    Digitally organize information about facilities, usage patterns,
-                    problems and improvement suggestions for Diamond Garden.
-                </p>
-                <div class="snapshot-grid">
-                    <div><b>9,798 m²</b><span>MCGM listed area</span></div>
-                    <div><b>Chembur</b><span>Mumbai location</span></div>
-                    <div><b>Public park</b><span>Selected study space</span></div>
-                    <div><b>Field survey</b><span>Current status to verify</span></div>
-                </div>
-                <div class="mini-list">
-                    <div><span>01</span> Field observation</div>
-                    <div><span>02</span> Data collection</div>
-                    <div><span>03</span> Digital presentation</div>
-                    <div><span>04</span> Analysis & recommendations</div>
-                </div>
-            </div>
+            <p class="section-intro">
+                Current garden timings are shown below. The administrator can
+                update these timings when required.
+            </p>
+
         </div>
-    </section>
 
-    <section class="section section-soft" id="facilities">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="section-label">FACILITIES</span>
-                    <h2>What can be found in the garden?</h2>
-                </div>
-                <p class="section-intro">Facilities documented during the field visit.</p>
-            </div>
 
-            <div class="filter-row">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="recreation">Recreation</button>
-                <button class="filter-btn" data-filter="comfort">Comfort</button>
-                <button class="filter-btn" data-filter="safety">Safety</button>
-            </div>
+        <div class="usage-layout">
 
-            <div class="cards-grid" id="facilityGrid"></div>
-        </div>
-    </section>
+            <div class="chart-card">
 
-    <section class="section" id="usage">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="section-label">USAGE ANALYSIS</span>
-                    <h2>Measure how different groups use the space.</h2>
-                </div>
-                <p class="section-intro">Visitor usage was observed across different time periods during the field visit.</p>
-            </div>
+                <div class="chart-header">
 
-            <div class="usage-layout">
-                <div class="chart-card">
-                    <div class="chart-header">
-                        <div><h3>Visitor observation</h3><p>Observed usage patterns during the field visit.</p></div>
-                        <span class="badge">Field observation</span>
-                    </div>
-                    <div class="pending-chart observation-list">
-                        <div><span>Morning</span><b>Adults and senior citizens mainly visit for jogging and walking.</b></div>
-                        <div><span>Afternoon</span><b>Couples are the main visitors observed during this period.</b></div>
-                        <div><span>Evening</span><b>Parents commonly visit with their children for play and leisure.</b></div>
-                    </div>
-                    <div class="chart-legend"><span>◉ Based on field observation</span><span>Usage varies by time of day</span></div>
-                </div>
-                <div class="audience-card">
-                    <h3>Groups to observe</h3>
-                    <div class="audience-item"><span>👧</span><div><strong>Children</strong><small>Play and recreational use</small></div></div>
-                    <div class="audience-item"><span>🚶</span><div><strong>Adults</strong><small>Walking, exercise and leisure</small></div></div>
-                    <div class="audience-item"><span>👴</span><div><strong>Senior Citizens</strong><small>Walking, seating and social use</small></div></div>
-                    <div class="audience-item"><span>👨‍👩‍👧</span><div><strong>Families</strong><small>Leisure and shared activities</small></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="issues">
-        <div class="container">
-            <div class="section-heading">
-                <div><span class="section-label">ISSUES & IMPROVEMENTS</span><h2>Observed issues and suggested improvements.</h2></div>
-                <p class="section-intro">The following issues were identified during the field visit and can be considered for improvement.</p>
-            </div>
-            <div class="issues-grid">
-                <article class="issue-placeholder">
-                    <span class="issue-number">01</span>
-                    <div><h3>Cracked benches</h3><p>Some benches in the garden are cracked or damaged, which can reduce seating comfort and may create a safety concern for visitors. Damaged benches should be repaired or replaced to provide safe and comfortable seating.</p></div>
-                    <span class="status-pill">Observed</span>
-                </article>
-                <article class="issue-placeholder">
-                    <span class="issue-number">02</span>
-                    <div><h3>Spitting near dustbins</h3><p>Spitting was observed near the dustbin area, affecting cleanliness and the overall hygiene of the public space. Clear cleanliness signage, awareness measures and regular monitoring near dustbins can help reduce this problem.</p></div>
-                    <span class="status-pill">Observed</span>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="gallery">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="section-label">FIELD VISIT GALLERY</span>
-                    <h2>Photographic evidence from Diamond Garden.</h2>
-                </div>
-                <p class="section-intro">All 23 geo-tagged photographs from the field visit are shown here. Click any photo to view it larger.</p>
-            </div>
-
-            <div class="gallery-grid">
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 1" data-photo="assets/20260927_13920PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_13920PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 1" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 2" data-photo="assets/20260927_122436PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122436PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 2" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 3" data-photo="assets/20260927_123621PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123621PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 3" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 4" data-photo="assets/20260927_123716PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123716PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 4" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 5" data-photo="assets/20260927_121748PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_121748PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 5" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 6" data-photo="assets/20260927_121812PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_121812PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 6" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 7" data-photo="assets/20260927_121955PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_121955PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 7" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 8" data-photo="assets/20260927_122043PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122043PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 8" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 9" data-photo="assets/20260927_122225PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122225PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 9" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 10" data-photo="assets/20260927_122342PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122342PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 10" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 11" data-photo="assets/20260927_122551PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122551PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 11" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 12" data-photo="assets/20260927_122648PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122648PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 12" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 13" data-photo="assets/20260927_122841PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122841PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 13" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 14" data-photo="assets/20260927_122918PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_122918PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 14" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 15" data-photo="assets/20260927_123051PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123051PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 15" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 16" data-photo="assets/20260927_123130PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123130PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 16" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 17" data-photo="assets/20260927_123213PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123213PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 17" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 18" data-photo="assets/20260927_123301PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123301PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 18" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 19" data-photo="assets/20260927_123434PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123434PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 19" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 20" data-photo="assets/20260927_123806PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123806PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 20" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 21" data-photo="assets/20260927_123821PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123821PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 21" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 22" data-photo="assets/20260927_123945PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_123945PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 22" loading="lazy">
-                </figure>
-                <figure class="gallery-card" tabindex="0" role="button" aria-label="Open photo 23" data-photo="assets/20260927_13923PMByGPSMapCamera.jpg" data-caption="">
-                    <img src="assets/20260927_13923PMByGPSMapCamera.jpg" alt="Diamond Garden field photograph 23" loading="lazy">
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <section class="section map-section" id="map">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <span class="section-label">DIGITAL MAPPING</span>
-                    <h2>Find Diamond Garden</h2>
-                </div>
-                <p class="section-intro">The map opens the location search for Diamond Garden, Chembur.</p>
-            </div>
-
-            <div class="map-card">
-                <iframe
-                    title="Diamond Garden Chembur map"
-                    src="https://www.google.com/maps?q=Diamond%20Garden%2C%20Chembur%2C%20Mumbai&output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <div class="map-caption">
                     <div>
-                        <strong>📍 Diamond Garden, Chembur</strong>
-                        <span>Use the map to verify the exact garden location during your project.</span>
+                        <h3>Opening Hours</h3>
+                        <p>Daily operating schedule</p>
                     </div>
-                    <a class="text-link" target="_blank" rel="noopener"
-                       href="https://www.google.com/maps/search/?api=1&query=Diamond+Garden+Chembur+Mumbai">
-                        Open in Google Maps ↗
-                    </a>
+
+                    <span class="badge">
+                        Garden Timings
+                    </span>
+
                 </div>
+
+
+                <div class="pending-chart observation-list">
+
+                    <div>
+                        <span>Morning</span>
+                        <b id="morningTiming">
+                            6:00 AM – 1:00 PM
+                        </b>
+                    </div>
+
+                    <div>
+                        <span>Afternoon Break</span>
+                        <b id="breakTiming">
+                            1:00 PM – 4:00 PM • CLOSED
+                        </b>
+                    </div>
+
+                    <div>
+                        <span>Evening</span>
+                        <b id="eveningTiming">
+                            4:00 PM – 9:30 PM
+                        </b>
+                    </div>
+
+                </div>
+
+
+                <div class="chart-legend">
+
+                    <span>
+                        🕐 Opening and closing hours
+                    </span>
+
+                    <span>
+                        Timings can be updated by administrator
+                    </span>
+
+                </div>
+
             </div>
+
+
+            <div class="audience-card">
+
+                <h3>Visitor Planning</h3>
+
+                <div class="audience-item">
+
+                    <span>🌅</span>
+
+                    <div>
+                        <strong>Morning Visit</strong>
+                        <small>
+                            Suitable for walking and jogging
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>☀️</span>
+
+                    <div>
+                        <strong>Afternoon Break</strong>
+                        <small>
+                            Garden remains closed
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🌆</span>
+
+                    <div>
+                        <strong>Evening Visit</strong>
+                        <small>
+                            Suitable for leisure and recreation
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FACILITIES
+========================= -->
+<section class="section" id="facilities">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    FACILITIES
+                </span>
+
+                <h2>
+                    What can be found in the garden?
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                Facilities documented during the field visit.
+            </p>
+
+        </div>
+
+
+        <div class="filter-row">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="recreation">
+                Recreation
+            </button>
+
+            <button class="filter-btn" data-filter="comfort">
+                Comfort
+            </button>
+
+            <button class="filter-btn" data-filter="safety">
+                Safety
+            </button>
+
+        </div>
+
+
+        <div class="cards-grid" id="facilityGrid"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     USAGE
+========================= -->
+<section class="section" id="usage">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    USAGE ANALYSIS
+                </span>
+
+                <h2>
+                    Measure how different groups use the space.
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                Visitor usage was observed across different time periods
+                during the field visit.
+            </p>
+
+        </div>
+
+
+        <div class="usage-layout">
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+                        <h3>Visitor observation</h3>
+                        <p>
+                            Observed usage patterns during the field visit.
+                        </p>
+                    </div>
+
+                    <span class="badge">
+                        Field observation
+                    </span>
+
+                </div>
+
+
+                <div class="pending-chart observation-list">
+
+                    <div>
+                        <span>Morning</span>
+                        <b>
+                            Adults and senior citizens mainly visit for
+                            jogging and walking.
+                        </b>
+                    </div>
+
+                    <div>
+                        <span>Afternoon</span>
+                        <b>
+                            Couples are the main visitors observed during
+                            this period.
+                        </b>
+                    </div>
+
+                    <div>
+                        <span>Evening</span>
+                        <b>
+                            Parents commonly visit with their children
+                            for play and leisure.
+                        </b>
+                    </div>
+
+                </div>
+
+
+                <div class="chart-legend">
+
+                    <span>
+                        ◉ Based on field observation
+                    </span>
+
+                    <span>
+                        Usage varies by time of day
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="audience-card">
+
+                <h3>Groups to observe</h3>
+
+                <div class="audience-item">
+
+                    <span>👧</span>
+
+                    <div>
+                        <strong>Children</strong>
+                        <small>
+                            Play and recreational use
+                        </small>
+                    </div>
+
+                </div>
+
+                <div class="audience-item">
+
+                    <span>🚶</span>
+
+                    <div>
+                        <strong>Adults</strong>
+                        <small>
+                            Walking, exercise and leisure
+                        </small>
+                    </div>
+
+                </div>
+
+                <div class="audience-item">
+
+                    <span>👴</span>
+
+                    <div>
+                        <strong>Senior Citizens</strong>
+                        <small>
+                            Walking, seating and social use
+                        </small>
+                    </div>
+
+                </div>
+
+                <div class="audience-item">
+
+                    <span>👨‍👩‍👧</span>
+
+                    <div>
+                        <strong>Families</strong>
+                        <small>
+                            Leisure and shared activities
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ISSUES
+========================= -->
+<section class="section" id="issues">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    ISSUES & IMPROVEMENTS
+                </span>
+
+                <h2>
+                    Observed issues and suggested improvements.
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                The following issues were identified during the field visit
+                and can be considered for improvement.
+            </p>
+
+        </div>
+
+
+        <div class="issues-grid">
+
+            <article class="issue-placeholder">
+
+                <span class="issue-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Cracked benches
+                    </h3>
+
+                    <p>
+                        Some benches in the garden are cracked or damaged,
+                        which can reduce seating comfort and may create a
+                        safety concern for visitors. Damaged benches should
+                        be repaired or replaced to provide safe and
+                        comfortable seating.
+                    </p>
+
+                </div>
+
+                <span class="status-pill">
+                    Observed
+                </span>
+
+            </article>
+
+
+            <article class="issue-placeholder">
+
+                <span class="issue-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Spitting near dustbins
+                    </h3>
+
+                    <p>
+                        Spitting was observed near the dustbin area,
+                        affecting cleanliness and the overall hygiene of
+                        the public space. Clear cleanliness signage,
+                        awareness measures and regular monitoring near
+                        dustbins can help reduce this problem.
+                    </p>
+
+                </div>
+
+                <span class="status-pill">
+                    Observed
+                </span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     USER LOGIN
+========================= -->
+<section class="section section-soft" id="login">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    USER ACCOUNT
+                </span>
+
+                <h2>
+                    User Login
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                Registered users can sign in to access user-only features.
+            </p>
+
+        </div>
+
+
+        <div class="usage-layout">
+
+            <div class="chart-card auth-card">
+
+                <div class="chart-header">
+
+                    <div>
+                        <h3>
+                            Sign in as User
+                        </h3>
+
+                        <p>
+                            Enter your registered email and password.
+                        </p>
+                    </div>
+
+                    <span class="badge">
+                        USER
+                    </span>
+
+                </div>
+
+
+                <form id="userLoginForm" autocomplete="on">
+
+                    <label for="userLoginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="userLoginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+
+                    <label for="userLoginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="userLoginPassword"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        User Login
+                    </button>
+
+
+                    <p
+                        id="userLoginMessage"
+                        class="auth-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <div class="auth-link-box">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="#register">
+                        Create User Account
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="audience-card auth-info-card">
+
+                <h3>
+                    User Access
+                </h3>
+
+                <div class="audience-item">
+
+                    <span>👤</span>
+
+                    <div>
+                        <strong>
+                            Personal Account
+                        </strong>
+
+                        <small>
+                            Login using your registered credentials
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🔒</span>
+
+                    <div>
+                        <strong>
+                            Protected Access
+                        </strong>
+
+                        <small>
+                            Users cannot modify website content
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>📝</span>
+
+                    <div>
+                        <strong>
+                            Registration Required
+                        </strong>
+
+                        <small>
+                            New users must register before login
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     USER REGISTRATION
+========================= -->
+<section class="section" id="register">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    NEW USER
+                </span>
+
+                <h2>
+                    Create Your Account
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                Register once and use your account for future user login.
+            </p>
+
+        </div>
+
+
+        <div class="usage-layout">
+
+            <div class="chart-card auth-card">
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <h3>
+                            User Registration
+                        </h3>
+
+                        <p>
+                            Create a normal visitor account.
+                        </p>
+
+                    </div>
+
+                    <span class="badge">
+                        REGISTER
+                    </span>
+
+                </div>
+
+
+                <form id="registerForm" autocomplete="on">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <label for="registerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        name="password"
+                        placeholder="Minimum 6 characters"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+
+                    <label for="registerConfirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerConfirmPassword"
+                        name="confirmPassword"
+                        placeholder="Re-enter your password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Create Account
+                    </button>
+
+
+                    <p
+                        id="registerMessage"
+                        class="auth-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <div class="auth-link-box">
+
+                    <span>
+                        Already registered?
+                    </span>
+
+                    <a href="#login">
+                        Go to User Login
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="audience-card auth-info-card">
+
+                <h3>
+                    Account Rules
+                </h3>
+
+                <div class="audience-item">
+
+                    <span>✅</span>
+
+                    <div>
+                        <strong>
+                            Normal User
+                        </strong>
+
+                        <small>
+                            Registration always creates a user account
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🚫</span>
+
+                    <div>
+                        <strong>
+                            No Admin Access
+                        </strong>
+
+                        <small>
+                            Normal registration cannot create an administrator
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🔐</span>
+
+                    <div>
+                        <strong>
+                            Secure Password
+                        </strong>
+
+                        <small>
+                            Password is handled by the backend securely
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ADMIN LOGIN
+========================= -->
+<section class="section section-dark" id="admin-login">
+
+    <div class="container">
+
+        <div class="section-heading dark-heading">
+
+            <div>
+
+                <span class="section-label">
+                    RESTRICTED AREA
+                </span>
+
+                <h2>
+                    Administrator Login
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                Only the authorized administrator can access website management features.
+            </p>
+
+        </div>
+
+
+        <div class="usage-layout">
+
+            <div class="chart-card auth-card admin-auth-card">
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <h3>
+                            Administrator Access
+                        </h3>
+
+                        <p>
+                            Authorized administrator credentials are required.
+                        </p>
+
+                    </div>
+
+                    <span class="badge">
+                        ADMIN
+                    </span>
+
+                </div>
+
+
+                <form id="adminLoginForm" autocomplete="on">
+
+                    <label for="adminLoginEmail">
+                        Administrator Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="adminLoginEmail"
+                        name="email"
+                        placeholder="Enter administrator email"
+                        autocomplete="username"
+                        required
+                    >
+
+
+                    <label for="adminLoginPassword">
+                        Administrator Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="adminLoginPassword"
+                        name="password"
+                        placeholder="Enter administrator password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Administrator Login
+                    </button>
+
+
+                    <p
+                        id="adminLoginMessage"
+                        class="auth-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+
+            <div class="audience-card admin-info-card">
+
+                <h3>
+                    Administrator Permissions
+                </h3>
+
+
+                <div class="audience-item">
+
+                    <span>✏️</span>
+
+                    <div>
+                        <strong>
+                            Edit Website Content
+                        </strong>
+
+                        <small>
+                            Update information when authorized
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🕐</span>
+
+                    <div>
+                        <strong>
+                            Update Garden Timings
+                        </strong>
+
+                        <small>
+                            Change opening and closing timings
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🏞️</span>
+
+                    <div>
+                        <strong>
+                            Manage Facilities
+                        </strong>
+
+                        <small>
+                            Maintain facility information and details
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="audience-item">
+
+                    <span>🔒</span>
+
+                    <div>
+                        <strong>
+                            Restricted Access
+                        </strong>
+
+                        <small>
+                            Normal users cannot access administrator functions
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     ADMIN DASHBOARD
+========================= -->
+<section class="section section-soft" id="admin-dashboard" style="display: none;">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">ADMINISTRATOR PANEL</span>
+                <h2>Website Management Dashboard</h2>
+            </div>
+
+            <p class="section-intro">
+                Only the authorized administrator can update website information.
+            </p>
+
+        </div>
+
+
+        <div class="usage-layout">
+
+            <!-- Garden Timings -->
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+                        <h3>Garden Timings</h3>
+                        <p>Update opening and closing hours.</p>
+                    </div>
+
+                    <span class="badge">ADMIN ONLY</span>
+
+                </div>
+
+
+                <form id="timingsForm" class="admin-form">
+
+                    <label for="adminMorningOpen">
+                        Morning Opening
+                    </label>
+
+                    <input
+                        type="time"
+                        id="adminMorningOpen"
+                        required
+                    >
+
+
+                    <label for="adminMorningClose">
+                        Morning Closing
+                    </label>
+
+                    <input
+                        type="time"
+                        id="adminMorningClose"
+                        required
+                    >
+
+
+                    <label for="adminEveningOpen">
+                        Evening Opening
+                    </label>
+
+                    <input
+                        type="time"
+                        id="adminEveningOpen"
+                        required
+                    >
+
+
+                    <label for="adminEveningClose">
+                        Evening Closing
+                    </label>
+
+                    <input
+                        type="time"
+                        id="adminEveningClose"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Save Garden Timings
+                    </button>
+
+
+                    <p
+                        id="timingsAdminMessage"
+                        class="auth-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+            <button
+    
+    <!-- =========================
+     VISITOR TRACKING
+========================= -->
+<div class="chart-card" style="margin-top: 30px;">
+
+    <div class="chart-header">
+
+        <div>
+            <h3>Website Visitors</h3>
+            <p>View registered users who accessed the website.</p>
+        </div>
+
+        <span class="badge">VISITOR DATA</span>
+
+    </div>
+
+
+    <!-- Visitor Statistics -->
+    <div
+        style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        "
+    >
+
+        <div
+            style="
+                padding: 20px;
+                border-radius: 14px;
+                background: rgba(255,255,255,0.75);
+                border: 1px solid rgba(0,0,0,0.08);
+            "
+        >
+            <small>Total Unique Visitors</small>
+
+            <h2
+                id="totalVisitorsCount"
+                style="margin: 8px 0 0;"
+            >
+                0
+            </h2>
+        </div>
+
+
+        <div
+            style="
+                padding: 20px;
+                border-radius: 14px;
+                background: rgba(255,255,255,0.75);
+                border: 1px solid rgba(0,0,0,0.08);
+            "
+        >
+            <small>Total Visits</small>
+
+            <h2
+                id="totalVisitsCount"
+                style="margin: 8px 0 0;"
+            >
+                0
+            </h2>
+        </div>
+
+    </div>
+
+
+    <!-- Visitor Table -->
+    <div style="overflow-x: auto;">
+
+        <table
+            style="
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 650px;
+            "
+        >
+
+            <thead>
+
+                <tr>
+
+                    <th style="text-align:left; padding:12px;">
+                        Name
+                    </th>
+
+                    <th style="text-align:left; padding:12px;">
+                        Email
+                    </th>
+
+                    <th style="text-align:left; padding:12px;">
+                        Total Visits
+                    </th>
+
+                    <th style="text-align:left; padding:12px;">
+                        Last Visit
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="visitorTableBody">
+
+                <tr>
+
+                    <td
+                        colspan="4"
+                        style="
+                            padding:20px;
+                            text-align:center;
+                        "
+                    >
+                        Loading visitor data...
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <p
+    id="visitorAdminMessage"
+    class="auth-message"
+    aria-live="polite"
+></p>
+
+</div>
+
+</div>
+
+<button
+    type="button"
+    id="adminLogoutButton"
+    class="btn btn-ghost"
+    style="
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+    "
+>
+    Administrator Logout
+</button>
+
+<!-- =========================
+     MANAGE FACILITIES
+========================= -->
+
+            <!-- =========================
+     MANAGE FACILITIES
+========================= -->
+<div class="chart-card admin-facilities-card">
+
+    <div class="chart-header">
+
+        <div>
+            <h3>Manage Facilities</h3>
+            <p>Edit facility information shown on the website.</p>
+        </div>
+
+        <span class="badge">ADMIN ONLY</span>
+
+    </div>
+
+    <div id="adminFacilitiesList" class="admin-facilities-list">
+
+        <p class="admin-loading">
+            Loading facilities...
+        </p>
+
+    </div>
+
+    <p
+        id="facilityAdminMessage"
+        class="auth-message"
+        aria-live="polite"
+    ></p>
+
+</div>
+
+<!-- =========================
+     MANAGE ISSUES
+========================= -->
+<div class="chart-card admin-facilities-card">
+
+    <div class="chart-header">
+
+        <div>
+            <h3>Manage Issues</h3>
+            <p>Edit issues and improvement information shown on the website.</p>
+        </div>
+
+        <span class="badge">ADMIN ONLY</span>
+
+    </div>
+
+    <div id="adminIssuesList" class="admin-facilities-list">
+
+        <p class="admin-loading">
+            Loading issues...
+        </p>
+
+    </div>
+
+    <p
+        id="issueAdminMessage"
+        class="auth-message"
+        aria-live="polite"
+    ></p>
+
+</div>
+
+            <!-- Admin Permissions -->
+            <div class="audience-card">
+
+                <h3>Administrator Permissions</h3>
+
+                <div class="audience-item">
+                    <span>🕐</span>
+                    <div>
+                        <strong>Garden Timings</strong>
+                        <small>Update opening and closing hours</small>
+                    </div>
+                </div>
+
+                <div class="audience-item">
+                    <span>🏞️</span>
+                    <div>
+                        <strong>Facilities</strong>
+                        <small>Manage facility information</small>
+                    </div>
+                </div>
+
+                <div class="audience-item">
+                    <span>⚠️</span>
+                    <div>
+                        <strong>Issues</strong>
+                        <small>Manage issues and improvements</small>
+                    </div>
+                </div>
+
+                <div class="audience-item">
+                    <span>🔒</span>
+                    <div>
+                        <strong>Restricted Access</strong>
+                        <small>Normal users cannot access this panel</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FIELD VISIT GALLERY
+========================= -->
+<section class="section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    FIELD VISIT GALLERY
+                </span>
+
+                <h2>
+                    Photographic evidence from Diamond Garden.
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                All 23 geo-tagged photographs from the field visit are shown here.
+                Click any photo to view it larger.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 1"
+                data-photo="assets/20260927_13920PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_13920PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 1"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 2"
+                data-photo="assets/20260927_122436PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122436PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 2"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 3"
+                data-photo="assets/20260927_123621PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123621PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 3"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 4"
+                data-photo="assets/20260927_123716PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123716PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 4"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 5"
+                data-photo="assets/20260927_121748PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_121748PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 5"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 6"
+                data-photo="assets/20260927_121812PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_121812PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 6"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 7"
+                data-photo="assets/20260927_121955PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_121955PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 7"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 8"
+                data-photo="assets/20260927_122043PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122043PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 8"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 9"
+                data-photo="assets/20260927_122225PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122225PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 9"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 10"
+                data-photo="assets/20260927_122342PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122342PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 10"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 11"
+                data-photo="assets/20260927_122551PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122551PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 11"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 12"
+                data-photo="assets/20260927_122648PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122648PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 12"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 13"
+                data-photo="assets/20260927_122841PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122841PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 13"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 14"
+                data-photo="assets/20260927_122918PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_122918PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 14"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 15"
+                data-photo="assets/20260927_123051PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123051PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 15"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 16"
+                data-photo="assets/20260927_123130PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123130PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 16"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 17"
+                data-photo="assets/20260927_123213PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123213PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 17"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 18"
+                data-photo="assets/20260927_123301PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123301PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 18"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 19"
+                data-photo="assets/20260927_123434PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123434PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 19"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 20"
+                data-photo="assets/20260927_123806PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123806PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 20"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 21"
+                data-photo="assets/20260927_123821PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123821PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 21"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 22"
+                data-photo="assets/20260927_123945PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_123945PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 22"
+                    loading="lazy"
+                >
+            </figure>
+
+
+            <figure
+                class="gallery-card"
+                tabindex="0"
+                role="button"
+                aria-label="Open photo 23"
+                data-photo="assets/20260927_13923PMByGPSMapCamera.jpg"
+                data-caption=""
+            >
+                <img
+                    src="assets/20260927_13923PMByGPSMapCamera.jpg"
+                    alt="Diamond Garden field photograph 23"
+                    loading="lazy"
+                >
+            </figure>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAP
+========================= -->
+<section class="section map-section" id="map">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    DIGITAL MAPPING
+                </span>
+
+                <h2>
+                    Find Diamond Garden
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                The map opens the location search for Diamond Garden, Chembur.
+            </p>
+
+        </div>
+
+
+        <div class="map-card">
+
+            <iframe
+                title="Diamond Garden Chembur map"
+                src="https://www.google.com/maps?q=Diamond%20Garden%2C%20Chembur%2C%20Mumbai&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+
+            <div class="map-caption">
+
+                <div>
+
+                    <strong>
+                        📍 Diamond Garden, Chembur
+                    </strong>
+
+                    <span>
+                        Use the map to verify the exact garden location
+                        during your project.
+                    </span>
+
+                </div>
+
+
+                <a
+                    class="text-link"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://www.google.com/maps/search/?api=1&query=Diamond+Garden+Chembur+Mumbai"
+                >
+                    Open in Google Maps ↗
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 <footer class="footer">
+
     <div class="container footer-inner">
+
         <div>
-            <strong>Diamond Garden</strong>
-            <span>Public Space Usage and Digital Mapping</span>
+
+            <strong>
+                Diamond Garden
+            </strong>
+
+            <span>
+                Public Space Usage and Digital Mapping
+            </span>
+
         </div>
+
+
         <div class="footer-right">
-            <span>Community Engagement Project</span>
-            <span>•</span>
-            <span>B.Sc. Computer Science</span>
+
+            <span>
+                Community Engagement Project
+            </span>
+
+            <span>
+                •
+            </span>
+
+            <span>
+                B.Sc. Computer Science
+            </span>
+
         </div>
+
     </div>
+
 </footer>
 
-<div class="photo-modal" id="photoModal" aria-hidden="true">
-    <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Close photo">×</button>
-    <img id="photoModalImage" src="" alt="">
-    <div class="photo-modal-caption" id="photoModalCaption"></div>
+
+<!-- =========================
+     PHOTO MODAL
+========================= -->
+<div
+    class="photo-modal"
+    id="photoModal"
+    aria-hidden="true"
+>
+
+    <button
+        class="photo-modal-close"
+        id="photoModalClose"
+        type="button"
+        aria-label="Close photo"
+    >
+        ×
+    </button>
+
+    <img
+        id="photoModalImage"
+        src=""
+        alt=""
+    >
+
+    <div
+        class="photo-modal-caption"
+        id="photoModalCaption"
+    ></div>
+
 </div>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
